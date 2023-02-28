@@ -1,7 +1,7 @@
 {
     "info" : {
         "buttons" : ["Home", "About", "Skills", "Portfolio", "Contact"],
-        "about" : "Recent IT graduate with a specialization in Software Development with a GPA of 3.72 eager to ___ . Experience working on developing web applications using the MERN stack and managing databases using SQLPlus. Excited to work to gain real-world experience.",
+        "about" : "Recent IT graduate with a specialization in Software Development with a GPA of 3.72 eager to work in a team to develop innovative software. Experience working on developing web applications using the MERN stack and managing databases using SQLPlus. Excited to work and gain real-world experience.",
         "skills" : {
             "languages" : ["Java", "JavaScript", "Python", "HTML/CSS"],
             "frameworks" : ["Node.js", "React.js", "Express.js"],
