@@ -1,0 +1,19 @@
+{
+    "info" : {
+        "buttons" : ["Home", "About", "Skills", "Portfolio", "Contact"],
+        "about" : "Recent IT graduate with a specialization in Software Development with a GPA of 3.72 eager to ___ . Experience working on developing web applications using the MERN stack and managing databases using SQLPlus. Excited to work to gain real-world experience.",
+        "skills" : {
+            "languages" : ["Java", "JavaScript", "Python", "HTML/CSS"],
+            "frameworks" : ["Node.js", "React.js", "Express.js"],
+            "data" : ["SQL", "MongoDB"],
+            "software" : ["VSCode", "Eclipse", "NetBeans", "GitHub", "GitBash", "SQLPlus", "VMWare Workstation", "Oracle VM VirtualBox"]   
+        },
+        "portfolio": ["bachira.png","mushh.gif"]
+        ,
+        "contact" : {
+            "email" : "cervantesrhodan@gmail.com",
+            "linkedin" : "https://www.linkedin.com/in/rhodanc/",
+            "phone" : "587 876 9011"
+        }
+    }
+}
