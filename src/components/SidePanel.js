@@ -17,7 +17,7 @@ function sideClose() {
 }
 
 const SidePanel = () => {
-  const headings = info.info.buttons;
+  const headings = info.buttons;
 
   return(
     <div id='side' className='sidepanel' onMouseOver={sideOpen} onMouseLeave={sideClose}>

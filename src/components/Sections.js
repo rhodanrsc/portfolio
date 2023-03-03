@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
+import Experience from "./Experience";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
@@ -36,6 +37,7 @@ const Sections = () => {
     const homeRef = useRef(null);
     const aboutRef = useRef(null);
     const skillsRef = useRef(null);
+    const expRef = useRef(null);
     const portfolioRef = useRef(null);
     const contactRef = useRef(null);
 
@@ -43,6 +45,7 @@ const Sections = () => {
         { section : "Home", ref: homeRef },
         { section : "About", ref: aboutRef },
         { section : "Skills", ref: skillsRef },
+        { section : "Experience", ref: expRef },
         { section : "Portfolio", ref: portfolioRef },
         { section : "Contact", ref: contactRef }
     ];
@@ -82,6 +85,7 @@ const Sections = () => {
             <Home className='scroll' refp={homeRef} />
             <About className='scroll' refp={aboutRef} />
             <Skills className='scroll' refp={skillsRef} />
+            <Experience className='scroll' refp={expRef} />
             <Projects className='scroll' refp={portfolioRef} />
             <Contact className='scroll' refp={contactRef} />
         </div>

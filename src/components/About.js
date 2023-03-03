@@ -8,7 +8,7 @@ const About = (props) => {
             <figure className="photoContainer">
                 <img className="photo" src=""></img>
             </figure>
-            <p className="aboutBody">{info.info.about}</p>
+            <p className="aboutBody">{info.about}</p>
         </div>
         
     );

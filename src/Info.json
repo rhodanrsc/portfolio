@@ -1,6 +1,5 @@
 {
-    "info" : {
-        "buttons" : ["Home", "About", "Skills", "Portfolio", "Contact"],
+        "buttons" : ["Home", "About", "Skills", "Experience", "Portfolio", "Contact"],
         "about" : "Recent IT graduate with a specialization in Software Development with a GPA of 3.72 eager to work in a team to develop innovative software. Experience working on developing web applications using the MERN stack and managing databases using SQLPlus. Excited to work and gain real-world experience.",
         "skills" : {
             "languages" : ["Java", "JavaScript", "Python", "HTML/CSS"],
@@ -8,12 +7,19 @@
             "data" : ["SQL", "MongoDB"],
             "software" : ["VSCode", "Eclipse", "NetBeans", "GitHub", "GitBash", "SQLPlus", "VMWare Workstation", "Oracle VM VirtualBox"]   
         },
-        "portfolio": ["bachira.png","mushh.gif"]
-        ,
+        "experience": {
+            "company": "SAIT","role": "Full-Stack Developer",
+            "stack": ["MongoDB","Express.js", "React.js", "Node.js"],
+            "year": "2022",
+            "tasks": ["Heavily involved in UI/UX of the website and created components for front-end use",
+            "Developed components involved in retrieving data from MongoDB database",
+            "Maintained and updated list of deliverables to help the team stay on track",
+            "Collaborated with C-level executives to determine website requirements"]
+        },
+        "portfolio": ["bachira.png","mushh.gif"],
         "contact" : {
             "email" : "cervantesrhodan@gmail.com",
             "linkedin" : "https://www.linkedin.com/in/rhodanc/",
             "phone" : "587 876 9011"
         }
-    }
 } 

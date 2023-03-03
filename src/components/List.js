@@ -5,22 +5,19 @@ import { SiExpress } from "react-icons/si";
 const List = (props) => {
     return(
         <div className="items">
-            <li className="listItem">
-                <span className={`devicons ${
-                    props.item === 'Java' ? 'devicons-java' : 
-                    props.item === 'JavaScript' ? 'devicons-javascript' : 
-                    props.item === 'Python' ? 'devicons-python' : 
-                    props.item === 'HTML/CSS' ? 'devicons-html5' : 
-                    props.item === 'Node.js' ? 'devicons-nodejs_small' : 
-                    props.item === 'SQL' ? 'devicons-database' : 
-                    props.item === 'MongoDB' ? 'devicons-mongodb' : null
-                    }`} 
-                />
-                { props.item === 'HTML/CSS' ? <span className='devicons devicons-css3'/> : 
+            <div className="listItem"> 
+                {props.item === 'Java' ? <span className='devicons devicons-java' /> : 
+                props.item === 'JavaScript' ? <span className='devicons devicons-javascript' /> : 
+                props.item === 'Python' ? <span className='devicons devicons-python' /> : 
+                props.item === 'HTML/CSS' ? <span className='devicons devicons-html5' /> : 
+                props.item === 'Node.js' ? <span className='devicons devicons-nodejs_small' /> : 
+                props.item === 'SQL' ? <span className='devicons devicons-database' /> : 
+                props.item === 'MongoDB' ? <span className='devicons devicons-mongodb' /> : 
+                props.item === 'HTML/CSS' ? <span className='devicons devicons-css3'/> : 
                 props.item === 'React.js' ? <DiReact className='icon' /> : 
                 props.item === 'Express.js' ? <SiExpress className='icon'/> : null}
-                {props.item}
-            </li>
+                <p className="itemName">{props.item}</p>
+            </div>
         </div>
         
     );
