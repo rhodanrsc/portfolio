@@ -14,14 +14,10 @@ const Experience = (props) => {
             <h3>Experience</h3>
 
             <div className='expContainer'>
-                <div className='companyInfo'>
-                    <p className='expCompany'>{company} | </p> 
-                    <p className='expYear'>{year}</p>
-                </div>
-
-                <div></div>
-
+                
                 <Company 
+                    company = {company}
+                    year = {year}
                     role = {role}
                     tasks = {tasks}
                     stack = {stack}

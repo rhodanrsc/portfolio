@@ -33,11 +33,16 @@ html {
 /* ---------------------------------------------------------- */
 
 /* Section Setup */
+
+html, body {
+    max-width: 100%;
+}
+
 .snap {
     scroll-snap-align: start;
     position: sticky;
     height: 100vh;
-    padding: 30px;
+    padding: 30px; 
 }
 
 .snap:nth-child(2n+2) {
@@ -171,12 +176,17 @@ a {
 
 /* About Section */
 .aboutSection {
+    
     color: white;
 }
 
 .aboutBody {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 5px 0 #d6c124;
+    border-radius: 5px;
     font-size: large;
     margin: 0 auto;
+    padding: 30px;
     text-align: center;
     width: 50%;
 }
@@ -265,46 +275,60 @@ a {
 
 /* Experience */
 
+.companyInfo {
+    /* display: inline; */
+    font-size: 1em;
+    width: fit-content;
+    margin: 0 auto;
+    
+}
+
 .experience {
 
 }
 
+.expCompany {
+    display: inline-block;
+    font-weight: bold;
+    text-align: left;
+    height: 1em;
+}
+
 .expContainer {
     display: inline-block;
-    width: 1000px;
+    width: 50%;
     margin: 20px auto;
 }
 
-.expCompany {
-    display: inline;
-    font-weight: bold;
+.expRole {
+    margin: 0px 20px;
+    text-align: center;
+    font-size: .75em;
 }
 
-.expRole {
-    margin: 10px 20px;
-    text-align: left;
+.expYear {
+    display: inline;
+    margin: 0 10px;
+    opacity: 50%;
 }
 
 .roleCon {
+    background-color: #141414;
+    border-radius: 5px;
     display: inline-block;
     height: auto;
+    padding: 20px 20px 23px 20px;
+}
+
+.task {
+    margin: 10px auto;
 }
 
 .tasksCon {
     display: inline;
     float: right;
     height: auto;
-}
-
-.expYear {
-    display: inline-block;
-    opacity: 50%;
-}
-
-.companyInfo {
-    display: inline;
-    font-size: 24px;
-    width: 30%;
+    padding: 20px 20px 20px 0;
 }
 
 .tasksInfo {
@@ -313,26 +337,8 @@ a {
     box-shadow: 0px 0px 5px 0px #d6c124;
     display: inline-block;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
     height: max-content;
-}
-
-.task {
-    margin: 10px auto;
-}
-
-.stackList {
-    display: inline-block;
-    font-size: 15px;
-    margin: 0 auto;
-    text-align: center;
-    width: auto;
-}
-
-.stackList p {
-    display: inline;
-    margin: 0 10px;
-    color: #d6c124;
 }
 
 .taskList {
@@ -341,6 +347,20 @@ a {
     margin: 0 20px;
     text-align: left;
     width: 500px;
+}
+
+.stackList {
+    display: inline-block;
+    font-size: 15px;
+    margin: 100px 0 0 0;
+    text-align: center;
+    width: auto;
+}
+
+.stackList p {
+    display: inline;
+    margin: 0 10px;
+    color: #d6c124;
 }
 
 
@@ -356,3 +376,92 @@ a {
 
 /* Contact */
 
+.contactContainer {
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #d6c124;
+    display: inline-block;
+    margin: 6em;
+    padding: 50px 50px 30px 50px;
+    width: 35em;
+}
+
+.contactForm {
+    float: right;
+}
+
+.contactForm label {
+    display: inline;
+    font-size: 0.75em;
+    text-align: left;
+    width: 7em;
+    float: left;
+}
+
+.contactForm input {
+    display: inline;
+    float: left;
+    font-family: 'Quicksand', sans-serif;
+    width: 20em;
+}
+
+.contactForm textarea {
+    display: inline;
+    float: left;
+    font-family: 'Quicksand', sans-serif;
+    height: 7em;
+    min-width: 20em;
+    max-width: 20em;
+}
+
+.contactForm input, .contactForm textarea {
+    border-radius: 2px;
+    border-style: none;
+    font-size: large;
+    padding: 5px;
+}
+
+.contactInfo {
+    background-color: #141414;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000000;
+    display: inline;
+    float: left;
+    font-size: 0.7em;
+    padding: 40px 20px 40px 40px;
+    margin-bottom: 20px;
+}
+
+.contactInfo p, .contactInfo a {
+    display: inline-block;
+}
+
+.contactInfo a {
+    margin: 20px;
+    color: #FCE22A;
+    text-decoration: none;
+}
+
+.contactInfo p {
+    float: left;
+}
+
+.contactInfo a:hover {
+    color: #d6c124;
+}
+
+.submit {
+    background-color: #FCE22A;
+    border-radius: 5px;
+    color: #000000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 2em;
+    margin: 50px 0 0 40px;
+    width: 6em;
+}
+
+.submit:hover {
+    background-color: #d6c124;
+}

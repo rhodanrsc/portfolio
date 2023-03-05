@@ -9,7 +9,7 @@ const Home = (props) => {
             <h2 className="title">Junior Software Developer</h2>
 
             <div className="spacer" >
-                -----
+                linkedin github contact
             </div>
 
             <a className="downIconContainer" href="#About">
