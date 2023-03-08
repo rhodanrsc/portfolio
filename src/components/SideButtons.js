@@ -10,7 +10,7 @@ const SideButton = (props) => {
                     props.name === "About" ? <IoHelpCircleOutline size={25}/> : 
                     props.name === "Skills" ? <IoCodeSlashOutline size={25}/> :
                     props.name === "Experience" ? <IoLaptopOutline size={25}/> :
-                    props.name === "Portfolio" ? <IoFolderOutline size={25}/> : 
+                    props.name === "Projects" ? <IoFolderOutline size={25}/> : 
                     props.name === "Contact" ? <IoCallOutline size={25}/> : null} 
                 </div>
                 <div className="buttonName">

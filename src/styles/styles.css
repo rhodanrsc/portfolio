@@ -38,10 +38,21 @@ html, body {
     max-width: 100%;
 }
 
+#header {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #FCE22A;
+    margin-bottom: 0 auto ;
+    border-bottom: #d6c124 solid 1px;
+    padding-bottom: 1em;
+    width: 20em;
+}
+
 .snap {
     scroll-snap-align: start;
     position: sticky;
-    height: 100vh;
+    min-height: 100vh;
     padding: 30px; 
 }
 
@@ -83,6 +94,10 @@ h3 {
 #sidebuttonHome .button, #sidebuttonHome .button .buttonName {
     color: black;
     opacity: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 /* ---------------------------------------------------------- */
@@ -141,13 +156,17 @@ a {
 
 /* Home */
 .homepage {
-    margin-top: 250px;
-    padding-top: 0px;
+    padding-top: 250px;
 }
 
-.title {
+#title {
     color: #FCE22A;
     font-size: larger;
+}
+
+#name {
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .downIconContainer {
@@ -166,10 +185,27 @@ a {
 	60% {transform: translateY(-15px);}
 }
 
-.spacer {
-    height: 100px;
+.homeIcons {
+    display: block;
+    margin: 0 auto;
 }
 
+.homeIcons a {
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+    color: #FCE22A;
+    font-size: x-large;
+    padding: 0 5px;
+    height: 34px;
+    width: auto;
+    margin: 10px;
+}
+
+.homeIcons a:hover {
+    color: #d6c124;
+    font-size: 1em;
+}
 
 
 /* ------------------------------------------------------ */
@@ -192,15 +228,19 @@ a {
 }
 
 .photoContainer {
-    background-color: white;
+    object-fit: cover;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    min-height: 200px;
     margin: 70px auto;
 }
 
 .photo {
-
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
 }
 
 /* -------------------------------------------------- */
@@ -229,11 +269,18 @@ a {
     padding: 0;
 }
 
-.lists {
+#lists, .lists {
     /* display: inline-block; */
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0;
+}
+
+#lists h4 {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em;
+    margin: 1em auto;
 }
 
 .listItem {
@@ -258,7 +305,7 @@ a {
     float: left;
 }
 
-.icon {
+#icon, .icon {
     display: inline;
     vertical-align: middle;
     text-align: center;
@@ -275,12 +322,13 @@ a {
 
 /* Experience */
 
-.companyInfo {
-    /* display: inline; */
+.companyInfo, #companyInfo {
+    display: inline-block;
     font-size: 1em;
-    width: fit-content;
+    height: 3.65em;
     margin: 0 auto;
-    
+    padding: 20px;
+    width: fit-content;
 }
 
 .experience {
@@ -294,9 +342,8 @@ a {
     height: 1em;
 }
 
-.expContainer {
+.expContainer, #expContainer {
     display: inline-block;
-    width: 50%;
     margin: 20px auto;
 }
 
@@ -366,24 +413,50 @@ a {
 
 /* --------------------------------------------------- */
 
-/* Portfolio */
+/* Projects */
 
-.projects {
+.Carousel {
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #d6c124;
+    display: block;
+    margin: 0 auto 2em auto;
+    max-width: 50em;
+    height: 25em;
+    padding: 1em;
+}
 
+.carouselCaption {
+    background-color: rgba(0, 0, 0, 75%);
+    border-radius: 5px;
+}
+
+.projectHeader {
+    margin-bottom: 3em;
+}
+
+.slide {
+    border-radius: 5px;
 }
 
 /* --------------------------------------------------- */
 
 /* Contact */
 
-.contactContainer {
+.contactContainer, #contactContainer {
     background-color: #1a1a1a;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #d6c124;
     display: inline-block;
-    margin: 6em;
-    padding: 50px 50px 30px 50px;
-    width: 35em;
+    margin: 5em;
+    min-height: 14em;
+    padding: 40px;
+    width: 38em;
+}
+
+#contactContainer h3 {
+    border-bottom: grey solid 2px;
+    padding-bottom: 1em;
 }
 
 .contactForm {
@@ -409,7 +482,8 @@ a {
     display: inline;
     float: left;
     font-family: 'Quicksand', sans-serif;
-    height: 7em;
+    height: 8em;
+    min-height: 8em;
     min-width: 20em;
     max-width: 20em;
 }
@@ -418,31 +492,43 @@ a {
     border-radius: 2px;
     border-style: none;
     font-size: large;
+    margin: 5px 0;
     padding: 5px;
 }
 
-.contactInfo {
+.contactInfo, #contactInfo {
     background-color: #141414;
     border-radius: 5px;
     box-shadow: 2px 2px 2px #000000;
     display: inline;
     float: left;
     font-size: 0.7em;
-    padding: 40px 20px 40px 40px;
-    margin-bottom: 20px;
+    padding: 30px;
+    margin: 10px;
 }
 
-.contactInfo p, .contactInfo a {
+#contactInfo div p {
+    padding: 0!important;
+    margin: 0!important;
+}
+
+#contactInfo div p {
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.contactInfo a {
     display: inline-block;
 }
 
 .contactInfo a {
-    margin: 20px;
+    margin: 10px;
     color: #FCE22A;
     text-decoration: none;
 }
 
 .contactInfo p {
+    display: inline;
     float: left;
 }
 
@@ -450,16 +536,23 @@ a {
     color: #d6c124;
 }
 
+#message {
+    display: inline-block;
+    min-height: 5rem;
+}
+
 .submit {
     background-color: #FCE22A;
     border-radius: 5px;
     color: #000000;
+    float: right;
     font-family: 'Quicksand', sans-serif;
     font-size: 0.7em;
     font-weight: bold;
     height: 2em;
-    margin: 50px 0 0 40px;
+    /* margin: 40px 0 0 40px; */
     width: 6em;
+    transition: 0.01s ease-in-out;
 }
 
 .submit:hover {

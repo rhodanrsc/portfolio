@@ -1,6 +1,8 @@
 {
-        "buttons" : ["Home", "About", "Skills", "Experience", "Portfolio", "Contact"],
-        "about" : "Recent IT graduate with a specialization in Software Development with a GPA of 3.72 eager to work in a team to develop innovative software. Experience working on developing web applications using the MERN stack and managing databases using SQLPlus. Excited to work and gain real-world experience.",
+        "buttons" : ["Home", "About", "Skills", "Experience", "Projects", "Contact"],
+        "about" : ["Recent IT graduate with a specialization in Software Development with a GPA of 3.72 eager to work with a team to develop innovative software. Experience working on developing web applications using the MERN stack and managing databases using SQLPlus. Excited to work and gain real-world experience.", 
+        "As a collaborative team player with excellent time management and organizational skills, I excel in dynamic, fast-paced environments. I have worked on various projects within agile teams, contributing my skills to deliver high-quality software solutions. I believe that effective communication, adaptability, and a willingness to learn are essential qualities for success in the software development field.", 
+        "My current goal is to advance my knowledge and proficiency in Python to pursue my interest in machine learning. I am excited about the endless possibilities that machine learning presents and eager to contribute to the development of cutting-edge solutions."],
         "skills" : {
             "languages" : ["Java", "JavaScript", "Python", "HTML/CSS"],
             "frameworks" : ["Node.js", "React.js", "Express.js"],
@@ -16,7 +18,6 @@
             "Maintained and updated list of deliverables to help the team stay on track",
             "Collaborated with C-level executives to determine website requirements"]
         },
-        "portfolio": ["bachira.png","mushh.gif"],
         "contact" : {
             "email" : "cervantesrhodan@gmail.com",
             "linkedin" : "https://www.linkedin.com/in/rhodanc/",

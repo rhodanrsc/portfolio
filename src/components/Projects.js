@@ -1,14 +1,17 @@
 import React from "react";
 import info from '../Info.json';
+import Carousel from "./Carousel/Carousel";
 
 const images = info.portfolio;
 
 const Projects = (props) => {
     return(
-        <div id="Portfolio" className="projects snap" ref={props.refp}>
-            <h3>Portfolio</h3>
+        <div id="Projects" className="projects snap" ref={props.refp}>
+            <h3 id="header" className="projectHeader">Projects</h3>
 
-            <h4>{``}</h4>
+            <div className="carousel">
+                <Carousel />
+            </div>
 
         </div>
     )

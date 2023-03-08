@@ -14,8 +14,8 @@ const List = (props) => {
                 props.item === 'SQL' ? <span className='devicons devicons-database' /> : 
                 props.item === 'MongoDB' ? <span className='devicons devicons-mongodb' /> : 
                 props.item === 'HTML/CSS' ? <span className='devicons devicons-css3'/> : 
-                props.item === 'React.js' ? <DiReact className='icon' /> : 
-                props.item === 'Express.js' ? <SiExpress className='icon'/> : null}
+                props.item === 'React.js' ? <DiReact className='icon' id="icon" /> : 
+                props.item === 'Express.js' ? <SiExpress className='icon' id="icon" /> : null}
                 <p className="itemName">{props.item}</p>
             </div>
         </div>

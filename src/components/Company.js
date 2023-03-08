@@ -5,7 +5,7 @@ const Company = (props) => {
         <div className="tasksInfo">
             
             <div className="roleCon">
-                <div className='companyInfo'>
+                <div id="companyInfo" className='companyInfo'>
                     <p className='expCompany'>{props.company} | </p> 
                     <p className='expYear'>{props.year}</p>
                 </div>

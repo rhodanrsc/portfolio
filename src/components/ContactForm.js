@@ -3,8 +3,6 @@ import { useState, useRef } from "react";
 import apiKey from '../emailkey'
 import emailjs from 'emailjs-com'
 
-
-
 const ContactForm = () => {
     const form = useRef();
 
@@ -19,13 +17,12 @@ const ContactForm = () => {
         });
     };
 
+    // Makes the "Send" button look like it's pressed
     const submitDown = () => {
-        document.getElementById('submit').style.width = '5.75em';
-        document.getElementById('submit').style.height = '1.75em';
+        document.getElementById('submit').style.scale = '0.9';
     }
     const submitUp = () => {
-        document.getElementById('submit').style.width = '6em';
-        document.getElementById('submit').style.height = '2em';
+        document.getElementById('submit').style.scale = '1';
     }
 
     return(

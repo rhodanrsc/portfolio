@@ -38,7 +38,7 @@ const Sections = () => {
     const aboutRef = useRef(null);
     const skillsRef = useRef(null);
     const expRef = useRef(null);
-    const portfolioRef = useRef(null);
+    const projectsRef = useRef(null);
     const contactRef = useRef(null);
 
     const sectionRef = [
@@ -46,7 +46,7 @@ const Sections = () => {
         { section : "About", ref: aboutRef },
         { section : "Skills", ref: skillsRef },
         { section : "Experience", ref: expRef },
-        { section : "Portfolio", ref: portfolioRef },
+        { section : "Projects", ref: projectsRef },
         { section : "Contact", ref: contactRef }
     ];
 
@@ -54,7 +54,7 @@ const Sections = () => {
         // Scroll Functionality
         const handleScroll = () => {
             const { height: homeHeight } = getDimensions(homeRef.current);
-            const scrollPosition = window.scrollY + homeHeight;
+            const scrollPosition = window.scrollY + (homeHeight/2);
             
             const selected = sectionRef.find(({ section, ref}) => {
                 const ele = ref.current;
@@ -86,7 +86,7 @@ const Sections = () => {
             <About className='scroll' refp={aboutRef} />
             <Skills className='scroll' refp={skillsRef} />
             <Experience className='scroll' refp={expRef} />
-            <Projects className='scroll' refp={portfolioRef} />
+            <Projects className='scroll' refp={projectsRef} />
             <Contact className='scroll' refp={contactRef} />
         </div>
     );

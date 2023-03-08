@@ -9,8 +9,8 @@ const Skills = (props) => {
 
     return (
         <div id="Skills" className="skills snap" ref={props.refp}>
-            <h3 >Skills</h3>
-            <div className="languages lists">
+            <h3 id="header">Skills</h3>
+            <div id="lists" className="languages lists">
                 <h4>Languages</h4>
                 <div className="list">
                     {languages.map((item) => {
@@ -23,7 +23,7 @@ const Skills = (props) => {
                     })}
                 </div>
             </div>
-            <div className="Frameworks lists">
+            <div id="lists" className="Frameworks lists">
                 <h4>Frameworks</h4>
                 <div className="list">
                     {frameworks.map((item) => {
@@ -36,7 +36,7 @@ const Skills = (props) => {
                     })}
                 </div>
             </div>
-            <div className="Data lists">
+            <div id="lists" className="Data lists">
                 <h4>Data</h4>
                 <div className="list">
                     {data.map((item) => {
