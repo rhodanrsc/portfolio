@@ -21,6 +21,7 @@ const Experience = (props) => {
                     role = {role}
                     tasks = {tasks}
                     stack = {stack}
+                    key = {year + tasks.length + stack.length}
                 />
 
             </div>

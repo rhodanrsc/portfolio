@@ -78,7 +78,7 @@ const Sections = () => {
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
-      }, [visible])
+      })
 
     return(
         <div>

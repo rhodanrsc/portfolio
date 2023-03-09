@@ -9,20 +9,26 @@ const Company = (props) => {
                     <p className='expCompany'>{props.company} | </p> 
                     <p className='expYear'>{props.year}</p>
                 </div>
+
                 <p className='expRole'>{props.role}</p>
+
                 <div className='stackList'>
                     {props.stack.map((lang) => {
                         return(
-                            <p>{`${lang}`}</p>
+                            <p key={lang + lang.length}>{`${lang}`}</p>
                         )
                     })}
                 </div>
+
             </div>
+
             <div className="tasksCon">
+
                 <div className='taskList'>
+
                     {props.tasks.map((task) => {
                         return(
-                            <li className="task">{task}</li>
+                            <li className="task" key={task + task.length}>{task}</li>
                         )
                     })}
                     

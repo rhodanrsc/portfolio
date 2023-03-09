@@ -1,13 +1,9 @@
 /* HTML */
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    overflow: auto;
     background-color: #141414;
-}
-
-#Home {
-    
+    box-sizing: border-box;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
 .font {
@@ -17,7 +13,6 @@ html {
 /* App */
 .App {
     box-sizing: border-box;
-    
 }
 
 /* -------------------------------------------------------- */
@@ -34,26 +29,30 @@ html {
 
 /* Section Setup */
 
-html, body {
-    max-width: 100%;
+h3 {
+    color: #FCE22A;
 }
 
 #header {
+    border-bottom: #d6c124 solid 1px;
+    color: #FCE22A;
     display: inline-block;
     font-size: 1.25em;
     font-weight: bold;
-    color: #FCE22A;
     margin-bottom: 0 auto ;
-    border-bottom: #d6c124 solid 1px;
     padding-bottom: 1em;
     width: 20em;
 }
 
+html, body {
+    max-width: 100%;
+}
+
 .snap {
-    scroll-snap-align: start;
-    position: sticky;
     min-height: 100vh;
     padding: 30px; 
+    position: sticky;
+    scroll-snap-align: start;
 }
 
 .snap:nth-child(2n+2) {
@@ -62,10 +61,6 @@ html, body {
 
 .snap:nth-child(2n+3) {
     background-color: #141414;
-}
-
-h3 {
-    color: #FCE22A;
 }
 
 /* Scroll */
@@ -82,11 +77,6 @@ h3 {
     opacity: 100%;
 }
 
-#unselected {
-    background-color: black;
-    color: #FCE22A;
-}
-
 #sidebuttonHome {
     background-color: #FCE22A;
 }
@@ -96,6 +86,11 @@ h3 {
     opacity: 100%;
 }
 
+#unselected {
+    background-color: black;
+    color: #FCE22A;
+}
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -103,32 +98,9 @@ h3 {
 /* ---------------------------------------------------------- */
 
 /* Side Panel */
-.sidepanel {
-    color: #FCE22A;
-    background-color: black;
-    border-right: 1px #FCE22A solid;
-    display: inline-block;
-    width: 100px;
-    height: 100%;
-    position: fixed;
-    transition: 0.5s ease-in-out;
-    z-index: 1000;
-}
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-.sidepanel:hover .sidebutton .buttonName {
-    opacity: 1;
-    animation: fadein 2s normal;
-}
-
-.sidebutton {
-    padding: 10px 8px 8px 0px;
-    display: block;
-    text-align: center;
+a {
+    text-decoration: none;
 }
 
 .button {
@@ -138,8 +110,27 @@ h3 {
     text-decoration: none;
 }
 
-a {
-    text-decoration: none;
+.buttonName {
+    display: block;
+    opacity: 0;
+}
+
+.sidepanel {
+    color: #FCE22A;
+    background-color: black;
+    border-right: 1px #FCE22A solid;
+    display: inline-block;
+    height: 100%;
+    position: fixed;
+    transition: 0.5s ease-in-out;
+    width: 100px;
+    z-index: 1000;
+}
+
+.sidebutton {
+    display: block;
+    padding: 10px 8px 8px 0px;
+    text-align: center;
 }
 
 .sidebutton:hover {
@@ -147,31 +138,19 @@ a {
     box-shadow: 2px 2px 2px #d6c124;
 }
 
-.buttonName {
-    display: block;
-    opacity: 0;
+.sidepanel:hover .sidebutton .buttonName {
+    animation: fadein 2s normal;
+    opacity: 1;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* ------------------------------------------------------ */
 
 /* Home */
-.homepage {
-    padding-top: 250px;
-}
-
-#title {
-    color: #FCE22A;
-    font-size: larger;
-}
-
-#name {
-    font-weight: bold;
-    font-size: 2em;
-}
-
-.downIconContainer {
-    margin: 200px 0 0 0;
-}
 
 .downIcon {
     color: #FCE22A;
@@ -179,10 +158,8 @@ a {
     animation: iconBounce 2.5s ease infinite;
 }
 
-@keyframes iconBounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-30px);}
-	60% {transform: translateY(-15px);}
+.downIconContainer {
+    margin: 200px 0 0 0;
 }
 
 .homeIcons {
@@ -207,14 +184,29 @@ a {
     font-size: 1em;
 }
 
+.homepage {
+    padding-top: 250px;
+}
+
+#name {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#title {
+    color: #FCE22A;
+    font-size: larger;
+}
+
+@keyframes iconBounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
 
 /* ------------------------------------------------------ */
 
 /* About Section */
-.aboutSection {
-    
-    color: white;
-}
 
 .aboutBody {
     background-color: #1a1a1a;
@@ -227,8 +219,17 @@ a {
     width: 50%;
 }
 
+.aboutSection {
+    color: white;
+}
+
+.photo {
+    border-radius: 100%;
+    height: auto;
+    width: 200px;
+}
+
 .photoContainer {
-    object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 10px 0 #d6c124;
     max-width: 200px;
@@ -238,29 +239,38 @@ a {
     margin: 70px auto;
 }
 
-.photo {
-    width: 200px;
-    height: auto;
-    border-radius: 100%;
-}
-
 /* -------------------------------------------------- */
 
 /* Skills */
-.skills {
+
+.devicons {
+    color: #FCE22A;
+    display: inline;
+    font-size: x-large;
+    float: left;
+    margin: 10px;
+    padding: 5px;
     text-align: center;
 }
 
-.skills .items {
-    display: inline-block;
+#icon, .icon {
+    color: #FCE22A;
+    display: inline;
+    float: left;
+    font-size: x-large;
+    height: 34px;
+    margin: 10px;
+    padding: 0 5px;
     text-align: center;
-    margin: 0 10px 0 10px;
-    width: 200px;
-    height: 55px;
-    background-color: #1a1a1a;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px #000000;
-    font-size: 70%;
+    vertical-align: middle;
+    width: auto;
+}
+
+.itemName {
+    display: inline;
+    float: right;
+    margin: 12px;
+    text-align: center;
 }
 
 .list {
@@ -271,17 +281,16 @@ a {
 }
 
 #lists, .lists {
-    /* display: inline-block; */
-    text-align: center;
     margin: 0 auto;
     padding: 0;
+    text-align: center;
 }
 
 #lists h4 {
     font-size: 1em;
     font-weight: bold;
-    padding: 1em;
     margin: 1em auto;
+    padding: 1em;
 }
 
 .listItem {
@@ -289,34 +298,20 @@ a {
     text-align: center;
 }
 
-.itemName {
-    display: inline;
+.skills {
     text-align: center;
-    margin: 12px;
-    float: right;
 }
 
-.devicons {
-    display: inline;
-    margin: 10px;
-    padding: 5px;
+.skills .items {
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000000;
+    display: inline-block;
+    font-size: 70%;
+    height: 55px;
+    margin: 0 10px 0 10px;
     text-align: center;
-    color: #FCE22A;
-    font-size: x-large;
-    float: left;
-}
-
-#icon, .icon {
-    display: inline;
-    vertical-align: middle;
-    text-align: center;
-    color: #FCE22A;
-    font-size: x-large;
-    padding: 0 5px;
-    height: 34px;
-    width: auto;
-    margin: 10px;
-    float: left;
+    width: 200px;
 }
 
 /* --------------------------------------------------- */
@@ -330,10 +325,6 @@ a {
     margin: 0 auto;
     padding: 20px;
     width: fit-content;
-}
-
-.experience {
-
 }
 
 .expCompany {
@@ -350,8 +341,8 @@ a {
 
 .expRole {
     margin: 0px 20px;
-    text-align: center;
     font-size: .75em;
+    text-align: center;
 }
 
 .expYear {
@@ -366,6 +357,20 @@ a {
     display: inline-block;
     height: auto;
     padding: 20px 20px 23px 20px;
+}
+
+.stackList {
+    display: inline-block;
+    font-size: 15px;
+    margin: 100px 0 0 0;
+    text-align: center;
+    width: auto;
+}
+
+.stackList p {
+    display: inline;
+    margin: 0 10px;
+    color: #d6c124;
 }
 
 .task {
@@ -385,9 +390,9 @@ a {
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #d6c124;
     display: inline-block;
+    height: max-content;
     margin: 0 auto;
     padding: 0px;
-    height: max-content;
 }
 
 .taskList {
@@ -398,21 +403,6 @@ a {
     width: 500px;
 }
 
-.stackList {
-    display: inline-block;
-    font-size: 15px;
-    margin: 100px 0 0 0;
-    text-align: center;
-    width: auto;
-}
-
-.stackList p {
-    display: inline;
-    margin: 0 10px;
-    color: #d6c124;
-}
-
-
 /* --------------------------------------------------- */
 
 /* Projects */
@@ -422,9 +412,9 @@ a {
     border-radius: 5px;
     box-shadow: 0 0 5px 0 #d6c124;
     display: block;
+    height: 25em;
     margin: 0 auto 2em auto;
     max-width: 50em;
-    height: 25em;
     padding: 1em;
 }
 
@@ -446,10 +436,6 @@ a {
     margin-bottom: 3em;
 }
 
-.slide {
-    border-radius: 5px;
-}
-
 #projectStack {
     color: #d6c124;
     display: inline;
@@ -467,6 +453,10 @@ a {
     color: #d6c124;
 }
 
+.slide {
+    border-radius: 5px;
+}
+
 /* --------------------------------------------------- */
 
 /* Contact */
@@ -478,8 +468,8 @@ a {
     display: inline-block;
     margin: 5em;
     min-height: 14em;
-    padding: 40px;
     width: 38em;
+    padding: 40px;
 }
 
 #contactContainer h3 {
@@ -493,10 +483,10 @@ a {
 
 .contactForm label {
     display: inline;
+    float: left;
     font-size: 0.75em;
     text-align: left;
     width: 7em;
-    float: left;
 }
 
 .contactForm input {
@@ -531,18 +521,18 @@ a {
     display: inline;
     float: left;
     font-size: 0.7em;
-    padding: 30px;
     margin: 10px;
+    padding: 30px;
 }
 
 #contactInfo div p {
-    padding: 0!important;
     margin: 0!important;
+    padding: 0!important;
 }
 
 #contactInfo div p {
-    padding: 0!important;
     margin: 0!important;
+    padding: 0!important;
 }
 
 .contactInfo a {
@@ -550,8 +540,8 @@ a {
 }
 
 .contactInfo a {
-    margin: 10px;
     color: #FCE22A;
+    margin: 10px;
     text-decoration: none;
 }
 
@@ -578,7 +568,6 @@ a {
     font-size: 0.7em;
     font-weight: bold;
     height: 2em;
-    /* margin: 40px 0 0 40px; */
     width: 6em;
     transition: 0.01s ease-in-out;
 }

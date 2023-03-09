@@ -7,7 +7,7 @@ const About = (props) => {
         <div id="About" className="aboutSection snap" ref={props.refp}>
             <h3 id="header" >About</h3>
             <figure className="photoContainer">
-                <img className="photo" src={profilepic}></img>
+                <img className="photo" alt="me" src={profilepic}></img>
             </figure>
             <div className="aboutBody">
                 <p>{info.about[0]}</p>

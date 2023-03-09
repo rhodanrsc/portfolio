@@ -1,19 +1,13 @@
 import * as React from 'react';
 import SideButton from './SideButtons';
-import Sections from './Sections';
 import info from '../Info.json';
-import { useEffect, useState } from 'react';
-
-var closed = true;
 
 function sideOpen() {
     document.getElementById("side").style.width = "150px";
-    closed = false;
 }
 
 function sideClose() {
   document.getElementById("side").style.width = "100px";
-  closed = true;
 }
 
 const SidePanel = () => {
@@ -25,6 +19,7 @@ const SidePanel = () => {
         return(
         <SideButton 
           name = {b}
+          key = {b+b.length}
           toggle = {sideOpen}
         />
         )

@@ -1,11 +1,12 @@
 import React from "react";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import apiKey from '../emailkey'
 import emailjs from 'emailjs-com'
 
 const ContactForm = () => {
     const form = useRef();
 
+    // EmailJS function, sends form to emailjs.com to send as a proper email
     const sendEmail = (e) => {
       e.preventDefault();
       emailjs.sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, form.current, apiKey.PUBLIC_KEY)

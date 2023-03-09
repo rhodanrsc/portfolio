@@ -3,10 +3,14 @@ import { IoHomeOutline, IoHelpCircleOutline, IoCodeSlashOutline, IoFolderOutline
 
 const SideButton = (props) => {
     return(
-        <div className={"sidebutton " + props.name} id={'sidebutton' + props.name} onMouseOver={props.toggle} key={props.key}>
+        <div 
+            className={"sidebutton " + props.name} 
+            id={'sidebutton' + props.name} 
+            onMouseOver={props.toggle} 
+        >
             <a className="button" id={`button ${props.name ? 'selected' : 'unselected'}`} href={`#${props.name}`}>
-                <div className="buttonIcon">{
-                    props.name === "Home" ? <IoHomeOutline size={25}/> : 
+                <div className="buttonIcon">
+                    {props.name === "Home" ? <IoHomeOutline size={25}/> : 
                     props.name === "About" ? <IoHelpCircleOutline size={25}/> : 
                     props.name === "Skills" ? <IoCodeSlashOutline size={25}/> :
                     props.name === "Experience" ? <IoLaptopOutline size={25}/> :

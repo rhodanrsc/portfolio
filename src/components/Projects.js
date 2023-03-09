@@ -1,8 +1,5 @@
 import React from "react";
-import info from '../Info.json';
 import Carousel from "./Carousel/Carousel";
-
-const images = info.portfolio;
 
 const Projects = (props) => {
     return(
