@@ -18,6 +18,32 @@
             "Maintained and updated list of deliverables to help the team stay on track",
             "Collaborated with C-level executives to determine website requirements"]
         },
+        "projects" : [
+            {
+                "img" : "landing",
+                "alt" : "CC Landing Page",
+                "code": "https://github.com/rhodanrsc/CleanCollective",
+                "title" : "Clean Collective - Landing Page",
+                "desc" : "The landing page of Clean Collective where clean tech companies are driven to sign up",
+                "stack" : "MERN Stack"
+            },
+            {
+                "img" : "forum",
+                "alt" : "CC Forum",
+                "code": "https://github.com/rhodanrsc/CleanCollective",
+                "title" : "Clean Collective - Forum Page",
+                "desc" : "The forum page of Clean Collective where clean tech companies can engage in discussions and exchange solutions for their problems",
+                "stack" : "MERN Stack"
+            },
+            {
+                "img" : "portfolio",
+                "alt" : "Portfolio",
+                "code": "https://github.com/rhodanrsc/portfolio",
+                "title" : "Portfolio Website",
+                "desc" : "My personal portfolio website where I showcase my skills and abilities",
+                "stack" : "React.js"
+            }
+        ],
         "contact" : {
             "email" : "cervantesrhodan@gmail.com",
             "linkedin" : "https://www.linkedin.com/in/rhodanc/",

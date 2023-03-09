@@ -230,6 +230,7 @@ a {
 .photoContainer {
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 0 10px 0 #d6c124;
     max-width: 200px;
     max-height: 200px;
     min-height: 200px;
@@ -373,9 +374,10 @@ a {
 
 .tasksCon {
     display: inline;
+    border-left: rgb(99, 99, 99) 1px solid;
     float: right;
-    height: auto;
-    padding: 20px 20px 20px 0;
+    height: fit-content;
+    margin: 20px 20px 20px 0;
 }
 
 .tasksInfo {
@@ -426,9 +428,18 @@ a {
     padding: 1em;
 }
 
+.Carousel div h5 {
+    font-size: 1em;
+}
+
+.Carousel div p {
+    font-size: 0.75em;
+}
+
 .carouselCaption {
     background-color: rgba(0, 0, 0, 75%);
     border-radius: 5px;
+    padding: 18px;
 }
 
 .projectHeader {
@@ -437,6 +448,23 @@ a {
 
 .slide {
     border-radius: 5px;
+}
+
+#projectStack {
+    color: #d6c124;
+    display: inline;
+    font-size: large;
+}
+
+#projGit {
+    color: #FCE22A;
+    display: inline;
+    float: left;
+    width: 0;
+}
+
+#projGit:hover {
+    color: #d6c124;
 }
 
 /* --------------------------------------------------- */
