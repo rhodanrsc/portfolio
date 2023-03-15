@@ -6,6 +6,7 @@ import './App.css';
 
 // Styles
 import './styles/styles.css'
+import './styles/mobile.css'
 
 // Components
 import SidePanel from "./components/SidePanel"

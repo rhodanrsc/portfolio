@@ -1,0 +1,223 @@
+@media (max-width: 1320px) {
+    .sidepanel {
+        visibility: hidden;
+    }
+
+    /* About Section */
+    .aboutBody {
+        font-size: 1rem;
+        text-align: justify;
+        width: 80vw;
+    }
+
+    /* Contact */
+    #Contact #header {
+        margin-bottom: 1em;
+    }
+
+    #contactContainer {
+        margin: 0;
+        width: 80vw;
+    }
+
+    .contactForm {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0;
+        float: none;
+    }
+
+    .contactForm input {
+        display: block;
+        width: 100%;
+    }
+
+    .contactForm #message {
+        display: block;
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+    }
+
+    #contactInfo {
+        display: inline-block;
+        float: none;
+        margin: 0 auto;
+
+        width: 60vw;
+    }
+
+    .contactInfo div p {
+        display: inline-block;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .contactInfo div a {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .submit {
+        border: none;
+        height: 3em;
+        margin-top: 1em;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 820px){
+    
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    /* Sections */
+    .snap {
+        width: 100vw;
+    }
+
+    #header {
+        width: 15em;
+    }
+
+    /* ------------ */
+
+    /* Side Panel */
+    .sidepanel {
+        visibility: hidden;
+    }
+
+    /* ----------- */
+
+    /* Home Section */
+    .downIcon {
+        background-color: #FCE22A;
+        border-radius: 100px;
+        color: black;
+    }
+
+    #name {
+        font-size: 2.25rem;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+
+    /* ----------- */
+
+    /* About Section */
+    .aboutBody {
+        font-size: 1rem;
+        text-align: justify;
+        width: 80vw;
+    }
+
+    /* -------------- */
+    /* Skills */
+    .itemName {
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 0;
+    }
+
+
+    /* ------------- */
+    /* Experience */
+    .expContainer {
+        display: block;
+        max-width: 80vw;
+    }
+
+    .roleCon {
+        margin: 0;
+        width: 100%;
+    }
+
+    .stackList {
+        font-size: 0.7rem;
+    }
+
+    .task {
+        font-size: 0.8rem;
+        width: auto;
+    }
+
+    .tasksCon {
+        border: none;
+    }
+
+    .taskList {
+        margin: 0;
+        padding: 1.5rem;
+        width: auto;
+    }
+
+    /* ----------- */
+    /* Projects */
+
+
+
+    /* ------------- */
+    /* Contact */
+    #Contact #header {
+        margin-bottom: 1em;
+    }
+
+    #contactContainer {
+        margin: 0;
+        width: 80vw;
+    }
+
+    .contactForm {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0;
+        float: none;
+    }
+
+    .contactForm input {
+        display: block;
+        width: 100%;
+    }
+
+    .contactForm #message {
+        display: block;
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .contactInfo {
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .contactInfo div p {
+        display: inline-block;
+        float: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .contactInfo div a {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .submit {
+        border: none;
+        height: 3em;
+        margin-top: 1em;
+        width: 100%;
+    }
+
+}

@@ -3,11 +3,15 @@ import SideButton from './SideButtons';
 import info from '../Info.json';
 
 function sideOpen() {
+  if (window.screen.width >= 820) {
     document.getElementById("side").style.width = "150px";
+  }
 }
 
 function sideClose() {
-  document.getElementById("side").style.width = "100px";
+  if (window.screen.width >= 820) {
+    document.getElementById("side").style.width = "100px";
+  }
 }
 
 const SidePanel = () => {
