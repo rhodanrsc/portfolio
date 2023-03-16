@@ -21,7 +21,7 @@
         "projects" : [
             {
                 "img" : "landing",
-                "alt" : "CC Landing Page",
+                "alt" : "Clean Collective Landing Page",
                 "code": "https://github.com/rhodanrsc/CleanCollective",
                 "title" : "Clean Collective - Landing Page",
                 "desc" : "The landing page of Clean Collective where clean tech companies are driven to sign up",
@@ -29,7 +29,7 @@
             },
             {
                 "img" : "forum",
-                "alt" : "CC Forum",
+                "alt" : "Clean Collective Forum Page",
                 "code": "https://github.com/rhodanrsc/CleanCollective",
                 "title" : "Clean Collective - Forum Page",
                 "desc" : "The forum page of Clean Collective where clean tech companies can engage in discussions and exchange solutions for their problems",
@@ -37,7 +37,7 @@
             },
             {
                 "img" : "portfolio",
-                "alt" : "Portfolio",
+                "alt" : "Portfolio Website",
                 "code": "https://github.com/rhodanrsc/portfolio",
                 "title" : "Portfolio Website",
                 "desc" : "My personal portfolio website where I showcase my skills and abilities",
